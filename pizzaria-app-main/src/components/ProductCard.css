@@ -1,0 +1,65 @@
+
+
+.product-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  /* O fundo bege do corpo é aplicado aqui */
+  background-color: var(--color-body-bg);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.20);
+}
+
+/* "Qualquer .card-header QUE ESTEJA DENTRO de um .product-card"
+  Isso é MAIS FORTE que a regra padrão do Bootstrap.
+*/
+.product-card .card-header {
+  background-color: var(--color-header-bg);
+  color: var(--color-header-text);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 12px;
+  border-bottom: none;
+}
+
+.product-card-image {
+  height: 180px; /* Mantém a mesma altura fixa do placeholder */
+  
+  /* Garante que a imagem cubra o espaço sem distorcer */
+  object-fit: cover; 
+  
+  /* Fundo para caso a imagem demore a carregar */
+  background-color: var(--color-body-bg); 
+}
+
+/* "Qualquer .card-footer QUE ESTEJA DENTRO de um .product-card"
+*/
+.product-card .card-footer {
+  background-color: var(--color-footer-bg);
+  padding: 15px;
+  border-top: none; 
+  margin-top: auto; 
+}
+
+.product-name {
+  color: var(--color-product-name);
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.product-price {
+  color: var(--color-product-price);
+  font-size: 1.05rem;
+  font-weight: 500;
+}

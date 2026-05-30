@@ -1,0 +1,21 @@
+/* 1. Define suas variáveis de cor globais */
+:root {
+  --color-header-bg: #1e5128; /* Verde escuro */
+  --color-header-text: #f0e68c; /* Amarelo pálido/branco */
+  --color-body-bg: #fdf5e6;    /* Bege/Creme */
+  --color-footer-bg: #8B0000;  /* Vermelho escuro/Vinho */
+  --color-product-name: #FFD700; /* Amarelo Dourado */
+  --color-product-price: #FFFFFF; /* Branco */
+}
+
+/* 2. Reseta os estilos do navegador */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  /* Garante que o fundo da "página" seja o bege,
+     mesmo se o conteúdo for curto */
+  background-color: var(--color-body-bg); 
+}
